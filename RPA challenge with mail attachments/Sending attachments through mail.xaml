@@ -1,14 +1,15 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Sending_attachments_through_mail" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sending_attachments_through_mail" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="In_Email" Type="InOutArgument(x:String)" />
     <x:Property Name="In_DownloadPath" Type="InOutArgument(x:String)" />
     <x:Property Name="In_Endmail" Type="InArgument(x:String)" />
     <x:Property Name="UserSterpasss" Type="InOutArgument(x:String)" />
+    <x:Property Name="In_Server" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>740,1480</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>759.2,1063.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sending_attachments_through_mail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
@@ -85,7 +86,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sending_attachments_through_mail" sap:VirtualizedContainerService.HintSize="478.4,1415.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sending_attachments_through_mail" sap:VirtualizedContainerService.HintSize="375.2,998.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Mail_attachments" />
     </Sequence.Variables>
@@ -94,8 +95,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;sending Input  Email started&quot;]" />
-    <Assign sap:VirtualizedContainerService.HintSize="436.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;sending Input  Email started&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[Mail_attachments]</OutArgument>
       </Assign.To>
@@ -103,81 +104,15 @@
         <InArgument x:TypeArguments="x:String">[In_DownloadPath+"\challenge.xlsx"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Sending excel file through mail&quot;]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[In_Endmail]" />
-    <TryCatch DisplayName="Try Catch-SMTP" sap:VirtualizedContainerService.HintSize="436.8,691.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="375.2,460" sap2010:WorkflowViewState.IdRef="Sequence_3">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:SendExchangeMail ApplicationId="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" DirectoryId="{x:Null}" Domain="{x:Null}" EmailAutodiscover="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AuthenticationMode="UserNameAndPassword" Body="Hello,&#xD;&#xA;&#xD;&#xA;PFA of RPA Challenge Excel.&#xD;&#xA;&#xD;&#xA;Regards,&#xD;&#xA;UipathBOT.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;              ****Don't reply on this email.As it is automatically sent by BOT****" DisplayName="Send Exchange Mail Message" ExchangeVersion="Exchange2013_SP1" sap:VirtualizedContainerService.HintSize="333.6,274.4" sap2010:WorkflowViewState.IdRef="SendExchangeMail_1" IsBodyHtml="False" IsDraft="False" Password="[UserSterpasss]" SaveCopy="False" Server="https://outlook.office365.com/EWS/Exchange.asmx" Subject="[&quot;RPA challenge&quot;+&quot; &quot;+Now.Date.ToString(&quot;dd-MM-yyyy&quot;)]" To="[In_Endmail]" User="[In_Email]" />
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-            <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,239.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="Hello,&#xD;&#xA;&#xD;&#xA;PFA of RPA Challenge Excel.&#xD;&#xA;&#xD;&#xA;Regards,&#xD;&#xA;UipathBOT.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;              ****Don't reply on this email.As it is automatically sent by BOT****" DisplayName="Send SMTP Mail Message" Email="[In_Email]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[UserSterpasss]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;RPA challenge&quot;+&quot; &quot;+Now.Date.ToString(&quot;dd-MM-yyyy&quot;)]" To="[In_Endmail]">
-                  <ui:SendMail.Files>
-                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                      <InArgument x:TypeArguments="x:String">[Mail_attachments]</InArgument>
-                    </scg:List>
-                  </ui:SendMail.Files>
-                </ui:SendMail>
-              </Sequence>
-            </ui:CommentOut.Body>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:CommentOut>
-        </Sequence>
-      </TryCatch.Try>
-      <TryCatch.Catches>
-        <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ActivityAction x:TypeArguments="si:IOException">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="si:IOException" Name="exception3" />
-            </ActivityAction.Argument>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[exception3.Message]" />
-          </ActivityAction>
-        </Catch>
-      </TryCatch.Catches>
-      <TryCatch.Finally>
-        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="Hello,&#xA;&#xA;PFA of RPA Challenge Excel.&#xA;&#xA;Regards,&#xA;UipathBOT.&#xA;&#xA;&#xA;              ****Don't reply on this email.As it is automatically sent by BOT****" DisplayName="Send SMTP Mail Message" Email="[In_Email]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,274.4" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Password="[UserSterpasss]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;RPA challenge&quot;+&quot; &quot;+Now.Date.ToString(&quot;dd-MM-yyyy HH\hhh\mins&quot;)]" To="[In_Endmail]">
-          <ui:SendMail.Files>
-            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-              <InArgument x:TypeArguments="x:String">[Mail_attachments]</InArgument>
-            </scg:List>
-          </ui:SendMail.Files>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:SendMail>
-      </TryCatch.Finally>
-    </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Mails sent to&quot;+&quot; &quot;+ In_Endmail]" />
+    <ui:SendExchangeMail ApplicationId="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" DirectoryId="{x:Null}" Domain="{x:Null}" EmailAutodiscover="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AuthenticationMode="UserNameAndPassword" Body="Hello,&#xD;&#xA;&#xD;&#xA;PFA of RPA Challenge Excel.&#xD;&#xA;&#xD;&#xA;Regards,&#xD;&#xA;UipathBOT.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;              ****Don't reply on this Email.As it is automatically sent by BOT****" DisplayName="Send Exchange Mail Message" ExchangeVersion="Exchange2013_SP1" sap:VirtualizedContainerService.HintSize="333.6,274.4" sap2010:WorkflowViewState.IdRef="SendExchangeMail_2" IsBodyHtml="False" IsDraft="False" Password="[UserSterpasss]" SaveCopy="False" Server="[In_Server]" Subject="[&quot;RPA challenge&quot;+&quot; &quot;+Now.Date.ToString(&quot;dd-MM-yyyy HH\hhh\mins&quot;)]" To="[In_Endmail]" User="[In_Email]">
+      <ui:SendExchangeMail.Files>
+        <InArgument x:TypeArguments="x:String">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Mail_attachments" />
+        </InArgument>
+      </ui:SendExchangeMail.Files>
+    </ui:SendExchangeMail>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Sending excel file through mail&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[In_Endmail]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Mails sent to&quot;+&quot; &quot;+ In_Endmail]" />
   </Sequence>
 </Activity>

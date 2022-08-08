@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="859.2,1420" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Diagnostics;assembly=System" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uue="clr-namespace:UiPath.UIAutomationNext.Exceptions;assembly=UiPath.UIAutomationNext" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="72">
+    <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -46,7 +46,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="68">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -81,6 +81,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="869.6,1355.2" sap2010:WorkflowViewState.IdRef="Sequence_65">
@@ -102,6 +103,7 @@
             <Variable x:TypeArguments="ss:SecureString" Name="User_Password" />
             <Variable x:TypeArguments="x:String" Name="Download_Folders" />
             <Variable x:TypeArguments="x:String" Name="Documents_Folder" />
+            <Variable x:TypeArguments="x:String" Name="Server" />
           </Flowchart.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -125,7 +127,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">300,284.4 300,325.6</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Retriving assets" sap:VirtualizedContainerService.HintSize="375.2,1225.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <Sequence DisplayName="Retriving assets" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:Process" Name="Chrome" />
               </Sequence.Variables>
@@ -142,6 +144,11 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:KillProcess>
+              <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Exchange Mail- server address" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="333.6,139.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_6">
+                <ui:GetRobotAsset.Value>
+                  <OutArgument x:TypeArguments="x:String">[Server]</OutArgument>
+                </ui:GetRobotAsset.Value>
+              </ui:GetRobotAsset>
               <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Admin Emails" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="333.6,139.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_4">
                 <ui:GetRobotAsset.Value>
                   <OutArgument x:TypeArguments="x:String">[Admin_Emails]</OutArgument>
@@ -266,7 +273,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,324" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,300" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -274,7 +281,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <TryCatch.Try>
-                          <Sequence DisplayName="Opening Browser" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                          <Sequence DisplayName="Opening Browser" sap:VirtualizedContainerService.HintSize="836,1402.4" sap2010:WorkflowViewState.IdRef="Sequence_60">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Boolean" Name="Popup1" />
                             </Sequence.Variables>
@@ -304,7 +311,7 @@
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="794.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_39" Level="Info" Message="[&quot;RPA challenge website opened&quot;]" />
                             <ui:UiElementExists DisplayName="Element Exists 'chrome.exe Restore'" Exists="[Popup1]" sap:VirtualizedContainerService.HintSize="794.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
                               <ui:UiElementExists.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="34ffac09-37b2-4756-a844-31ec7f1cbaea" InformativeScreenshot="7b291e5e79dd0c9a52046e72e3352353" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;">
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="34ffac09-37b2-4756-a844-31ec7f1cbaea" InformativeScreenshot="e0914f9bdbcbe2b15a448db51599b73b" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
@@ -334,7 +341,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="38efcdfb-b275-42df-9e27-dc5fe8e02fef" InformativeScreenshot="a6f9f3968d8b6611902561cec6972407" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;&lt;ctrl name='Restore pages?' role='dialog' /&gt;&lt;ctrl name='Close' role='push button' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="38efcdfb-b275-42df-9e27-dc5fe8e02fef" InformativeScreenshot="73b756a30903a295b5f279f465f027a7" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;&lt;ctrl name='Restore pages?' role='alert' /&gt;&lt;ctrl name='Close' role='push button' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -426,6 +433,7 @@
                             <InOutArgument x:TypeArguments="x:String" x:Key="In_DownloadPath">[Download_Folders]</InOutArgument>
                             <InArgument x:TypeArguments="x:String" x:Key="In_Endmail">[Admin_Emails]</InArgument>
                             <InOutArgument x:TypeArguments="x:String" x:Key="UserSterpasss">[Str_Password]</InOutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="In_Server">[Server]</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                         <FlowStep.Next>
@@ -439,9 +447,18 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Downloading mail attachemets through mail" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Downlaoding mail attachements through mail.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
-                                <InOutArgument x:TypeArguments="x:String" x:Key="In_mail">[User_Email]</InOutArgument>
-                                <InOutArgument x:TypeArguments="x:String" x:Key="In_DocumentsInput">[Documents_Folder]</InOutArgument>
-                                <InOutArgument x:TypeArguments="x:String" x:Key="Userstrpass">[Str_Password]</InOutArgument>
+                                <InOutArgument x:TypeArguments="x:String" x:Key="In_mail">
+                                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="User_Email" />
+                                </InOutArgument>
+                                <InOutArgument x:TypeArguments="x:String" x:Key="In_DocumentsInput">
+                                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Documents_Folder" />
+                                </InOutArgument>
+                                <InOutArgument x:TypeArguments="x:String" x:Key="Userstrpass">
+                                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Str_Password" />
+                                </InOutArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="In_server">
+                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Server" />
+                                </InArgument>
                               </ui:InvokeWorkflowFile.Arguments>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -481,11 +498,22 @@
                                     </sap:WorkflowViewStateService.ViewState>
                                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Taking results screenshot" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Taking screenshot.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
-                                        <InArgument x:TypeArguments="x:String" x:Key="In_DocumentsFolder">[Documents_Folder]</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="In_Email">[User_Email]</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="In_strpass">[Str_Password]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="In_DocumentsFolder">
+                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Documents_Folder" />
+                                        </InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="In_Email">
+                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="User_Email" />
+                                        </InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="In_strpass">
+                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Str_Password" />
+                                        </InArgument>
                                         <InArgument x:TypeArguments="x:String" x:Key="argument1" />
-                                        <InArgument x:TypeArguments="x:String" x:Key="In_Adminmails">[Admin_Emails]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="In_Adminmails">
+                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Admin_Emails" />
+                                        </InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="In_Server">
+                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Server" />
+                                        </InArgument>
                                       </ui:InvokeWorkflowFile.Arguments>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -502,7 +530,7 @@
                                             <av:PointCollection x:Key="ConnectorLocation">363.2,408.84 363.2,450.04</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Killing process" sap:VirtualizedContainerService.HintSize="375.2,667.2" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                        <Sequence DisplayName="Killing process" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_66">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -540,7 +568,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">300,174.4 300,215.6</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Killing process" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_51">
+            <Sequence DisplayName="Killing process" sap:VirtualizedContainerService.HintSize="375.2,667.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

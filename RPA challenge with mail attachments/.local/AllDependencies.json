@@ -1023,7 +1023,7 @@
           "lib/net461/System.Collections.Immutable.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0": {
+      "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System.ComponentModel.DataAnnotations",
@@ -1034,6 +1034,18 @@
         },
         "runtime": {
           "lib/net461/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.IdentityModel.Tokens.Jwt/6.12.2": {
@@ -1473,6 +1485,90 @@
             "locale": "zh-CN"
           },
           "lib/net461/zh-CN/UiPath.Excel.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "UiPath.ExchangeServer.Activities/1.0.12": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Data.DataSetExtensions": "4.5.0",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/UiPath.ExchangeServer.Activities.Design.dll": {},
+          "lib/net461/UiPath.ExchangeServer.Activities.dll": {},
+          "lib/net461/UiPath.ExchangeServer.dll": {}
+        },
+        "resource": {
+          "lib/net461/de/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/es-MX/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/fr/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/fr/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/ja/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ja/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ko/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/pt-BR/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/ru/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/ru/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/tr/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/zh-CN/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net461/zh-CN/UiPath.ExchangeServer.Activities.resources.dll": {
             "locale": "zh-CN"
           }
         }
@@ -3249,7 +3345,7 @@
           "lib/net461/System.Collections.Immutable.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0": {
+      "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System.ComponentModel.DataAnnotations",
@@ -3260,6 +3356,18 @@
         },
         "runtime": {
           "lib/net461/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.IdentityModel.Tokens.Jwt/6.12.2": {
@@ -3687,6 +3795,90 @@
             "locale": "zh-CN"
           },
           "lib/net461/zh-CN/UiPath.Excel.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "UiPath.ExchangeServer.Activities/1.0.12": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Data.DataSetExtensions": "4.5.0",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/UiPath.ExchangeServer.Activities.Design.dll": {},
+          "lib/net461/UiPath.ExchangeServer.Activities.dll": {},
+          "lib/net461/UiPath.ExchangeServer.dll": {}
+        },
+        "resource": {
+          "lib/net461/de/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/es-MX/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/fr/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/fr/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/ja/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ja/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ko/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/pt-BR/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/ru/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/ru/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/tr/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.ExchangeServer.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/zh-CN/UiPath.ExchangeServer.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net461/zh-CN/UiPath.ExchangeServer.Activities.resources.dll": {
             "locale": "zh-CN"
           }
         }
@@ -6246,13 +6438,14 @@
         "version.txt"
       ]
     },
-    "System.ComponentModel.Annotations/4.7.0": {
-      "sha512": "0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+    "System.ComponentModel.Annotations/5.0.0": {
+      "sha512": "dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
       "type": "package",
-      "path": "system.componentmodel.annotations/4.7.0",
+      "path": "system.componentmodel.annotations/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -6329,8 +6522,27 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.componentmodel.annotations.4.7.0.nupkg.sha512",
+        "system.componentmodel.annotations.5.0.0.nupkg.sha512",
         "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.5.0.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -7126,6 +7338,67 @@
         "lib/net5.0/zh-CN/UiPath.Excel.resources.dll",
         "uipath.excel.activities.2.12.3.nupkg.sha512",
         "uipath.excel.activities.nuspec"
+      ]
+    },
+    "UiPath.ExchangeServer.Activities/1.0.12": {
+      "sha512": "JqY5FZDYl6jm1N/RFmOWDYRBbPs0OcZgJt+RAp2uq2QkaEIG6mSllaqgWbi2nM2LPU2z/Pa3NPFL73jtoABMig==",
+      "type": "package",
+      "path": "uipath.exchangeserver.activities/1.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.ExchangeServer.Activities.Design.dll",
+        "lib/net461/UiPath.ExchangeServer.Activities.dll",
+        "lib/net461/UiPath.ExchangeServer.dll",
+        "lib/net461/de/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/es/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/fr/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/ja/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/ko/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/pt/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/ru/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/tr/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/UiPath.ExchangeServer.Activities.Design.dll",
+        "lib/net5.0-windows7.0/UiPath.ExchangeServer.Activities.dll",
+        "lib/net5.0-windows7.0/UiPath.ExchangeServer.dll",
+        "lib/net5.0-windows7.0/de/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.ExchangeServer.Activities.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.ExchangeServer.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.ExchangeServer.Activities.resources.dll",
+        "uipath.exchangeserver.activities.1.0.12.nupkg.sha512",
+        "uipath.exchangeserver.activities.nuspec"
       ]
     },
     "UiPath.ImageProcessing/22.4.1": {
@@ -8404,6 +8677,7 @@
     "": [],
     ".NETFramework,Version=v4.6.1": [
       "UiPath.Excel.Activities >= 2.12.3 <= 2.12.3",
+      "UiPath.ExchangeServer.Activities >= 1.0.12 <= 1.0.12",
       "UiPath.Mail.Activities >= 1.15.2 <= 1.15.2",
       "UiPath.System.Activities >= 22.4.1 <= 22.4.1",
       "UiPath.UIAutomation.Activities >= 22.4.5 <= 22.4.5"
@@ -8427,6 +8701,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[2.12.3, 2.12.3]"
+          },
+          "UiPath.ExchangeServer.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.12, 1.0.12]"
           },
           "UiPath.Mail.Activities": {
             "include": "Runtime",
