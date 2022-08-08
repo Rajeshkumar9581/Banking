@@ -1,0 +1,1 @@
+[{"DocumentTypeId":"IVSTECH.ACCOUNT.INVOICES","Keywords":[{"Values":["invoice"],"NumberOfTimesConfirmed":1,"LastUpdated":"2022-01-02T16:58:45.4453403+05:30"},{"Values":["customer"],"NumberOfTimesConfirmed":1,"LastUpdated":"2022-01-02T17:59:10.4750123+05:30"}]}]

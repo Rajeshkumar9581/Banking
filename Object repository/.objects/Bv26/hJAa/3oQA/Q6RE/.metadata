@@ -1,0 +1,13 @@
+﻿{
+  "Id": "Q6REHh-PykG28IZRDO1eGw",
+  "Reference": "sylAzohXwkmGG_kMspm20A/Q6REHh-PykG28IZRDO1eGw",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/3oQAmYTt8km1hSYMUa0PyQ",
+  "Name": "pane (5)",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2021-12-29T16:38:10.192726Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:38:10.192726Z"
+}

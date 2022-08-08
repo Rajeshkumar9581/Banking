@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="8NNB06FoP0C5Z5PS6W_4kg" DesignTimeRectangle="9, 9, 1920, 132" ElementType="Toolbar" FriendlyName="'Ribbon'" FullSelectorArgument="&lt;ctrl automationid='Ribbon' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='Ribbon' role='menu bar' check:text='Ribbon' /&gt;" Guid="1bcebaf9-5522-4e79-9b4a-7b44db59c5d5" ScopeSelectorArgument="&lt;wnd app='uipath.studio.exe' cls='HwndWrapper*' title='Object repository - UiPath Studio Community' /&gt;" SearchSteps="Selector, FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="InformativeScreenshot" originalValue="0ffa530126b10bea62fb47c8df853ce2.png" xmlns="">0s0po9Gj3gUqBzsc8LGK0yA</imageRef>
+</TargetAnchorable>

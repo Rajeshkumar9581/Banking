@@ -1,0 +1,6 @@
+ String manuplation- Concatenates one or more instances of String, or the String representations of the values of one or more instances of Object.
+
+1)String binding(+)
+To join strings, put a + between characters.
+Code to combine String type variables “str1” and “str2” with “-” and “xyz” strings
+

@@ -1,0 +1,13 @@
+﻿{
+  "Id": "x60BK0haQ0yK4aLRWIucAg",
+  "Reference": "sylAzohXwkmGG_kMspm20A/x60BK0haQ0yK4aLRWIucAg",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/3oQAmYTt8km1hSYMUa0PyQ",
+  "Name": "Extensions",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2021-12-29T16:38:10.9993895Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:38:10.9993895Z"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://rpachallenge.com/" ContentHash="3_QZFCIcHky799TNZiTFWQ" DesignTimeRectangle="623, 638, 377, 58" ElementType="InputBox" FriendlyName="'INPUT ESfN8'" FullSelectorArgument="&lt;webctrl id='ESfN8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ESfN8' tag='INPUT' type='' aaname='' /&gt;" Guid="19df53ce-8ee4-4fc0-a86d-2f815a31cf21" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="623, 614, 79, 21" ElementType="Text" FriendlyName="'Last Name'" FullSelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' type='' check:text='Last Name' /&gt;" SearchSteps="FuzzySelector, Image">
+        <imageRef attrName="ImageBase64" xmlns="">1KgMrplMUKEauB_POmKtiOw</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0a8ES22jH3E6T6R6ck7dsDQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="a8d6ff2727b6ee30c6117c7382e4666b.png" xmlns="">0fXV4FAUsOkq12_YGnAJgjA</imageRef>
+</TargetAnchorable>

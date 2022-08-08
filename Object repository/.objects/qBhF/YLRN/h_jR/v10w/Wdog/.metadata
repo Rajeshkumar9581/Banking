@@ -1,0 +1,13 @@
+﻿{
+  "Id": "WdogEZzD6kifl0zKHi7ElA",
+  "Reference": "sylAzohXwkmGG_kMspm20A/WdogEZzD6kifl0zKHi7ElA",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/v10wo9vgS02f8V72Pry1fg",
+  "Name": "Add Activity",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2021-12-29T16:33:39.498038Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:33:39.498038Z"
+}

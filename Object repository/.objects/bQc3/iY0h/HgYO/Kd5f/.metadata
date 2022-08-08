@@ -1,0 +1,13 @@
+﻿{
+  "Id": "Kd5fki6Sw0Gu0J9wc2tZxQ",
+  "Reference": "sylAzohXwkmGG_kMspm20A/Kd5fki6Sw0Gu0J9wc2tZxQ",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/HgYOOZVL0k2kzuEeOh0_Cw",
+  "Name": "Intermediate D3D Window",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2022-04-04T08:07:47.0386294Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-04-04T08:07:47.0386294Z"
+}

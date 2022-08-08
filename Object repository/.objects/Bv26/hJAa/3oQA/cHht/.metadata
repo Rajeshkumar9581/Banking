@@ -1,0 +1,13 @@
+﻿{
+  "Id": "cHhtD8CBCEidsbrEYfq_RA",
+  "Reference": "sylAzohXwkmGG_kMspm20A/cHhtD8CBCEidsbrEYfq_RA",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/3oQAmYTt8km1hSYMUa0PyQ",
+  "Name": "Apps",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2021-12-29T16:38:11.3229867Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:38:11.3229867Z"
+}

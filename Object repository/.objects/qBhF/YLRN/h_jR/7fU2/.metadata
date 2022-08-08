@@ -1,0 +1,13 @@
+﻿{
+  "Id": "7fU2pjYEEEG9R8YiO9MXKQ",
+  "Reference": "sylAzohXwkmGG_kMspm20A/7fU2pjYEEEG9R8YiO9MXKQ",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/h_jRxRSg5k-bWK9J8Nb5Bg",
+  "Name": "Ribbon",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2021-12-29T16:33:39.3013367Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:33:39.3013367Z"
+}

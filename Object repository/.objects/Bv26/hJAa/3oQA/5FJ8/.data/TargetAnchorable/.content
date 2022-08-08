@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="qjBKO4ZDN0eBq1Nig5tmqA" DesignTimeRectangle="23, 958, 447, 68" ElementType="Button" FriendlyName="'Start'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' aaname='Start' check:text='Start' /&gt;" Guid="64d1bb53-fa5f-4fa4-ab57-181d980f9200" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="InformativeScreenshot" originalValue="3d906f971eccd00d8b023041774fb72b.png" xmlns="">0xHpDwojhp0u6DGtWHP5gUQ</imageRef>
+</TargetAnchorable>

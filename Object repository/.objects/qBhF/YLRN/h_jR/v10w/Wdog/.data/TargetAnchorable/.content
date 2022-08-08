@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="aE-CFbWqV02b-QZ0OA4bFg" DesignTimeRectangle="400, 215, 1488, 488" FriendlyName="'Add Activity'" FullSelectorArgument="&lt;wnd cls='HwndWrapper*' title='Main' /&gt;&lt;ctrl automationid='scrollViewer' /&gt;" FuzzySelectorArgument="&lt;wnd cls='HwndWrapper*' title='Main' /&gt;&lt;ctrl automationid='scrollViewer' role='pane' check:fulltext='Add Activity (Ctrl + Shift + T)' /&gt;" Guid="3d554bb8-db4d-49c3-b229-dd206c281c0b" ScopeSelectorArgument="&lt;wnd app='uipath.studio.exe' cls='HwndWrapper*' title='Object repository - UiPath Studio Community' /&gt;" SearchSteps="Selector, FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="InformativeScreenshot" originalValue="3222bbd76b134606a4d452db3493a381.png" xmlns="">0AeTOhbgfFUCUC4GGcRN8jg</imageRef>
+</TargetAnchorable>

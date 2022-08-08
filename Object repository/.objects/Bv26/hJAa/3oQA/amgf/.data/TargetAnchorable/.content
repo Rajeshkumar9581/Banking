@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="3UuAUujEZEeHqnvQR9G3NA" DesignTimeRectangle="1028, 528, 377, 58" ElementType="InputBox" FriendlyName="'INPUT JDo8K'" FullSelectorArgument="&lt;webctrl id='JDo8K' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='JDo8K' tag='INPUT' type='' aaname='' /&gt;" Guid="75a6fe8a-81e0-4df5-8360-5d4a1ac4a740" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="1028, 504, 111, 21" ElementType="Text" FriendlyName="'Phone Number'" FullSelectorArgument="&lt;webctrl aaname='Phone Number' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Phone Number' tag='LABEL' type='' check:text='Phone Number' /&gt;" SearchSteps="FuzzySelector, Image" />
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="InformativeScreenshot" originalValue="2969fd436a300d9ded867834b27c2ef2.png" xmlns="">0SBYEp_c4R063aT9QJH0ZfA</imageRef>
+</TargetAnchorable>

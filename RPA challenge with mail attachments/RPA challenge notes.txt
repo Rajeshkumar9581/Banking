@@ -1,0 +1,11 @@
+Assets:-
+Admin Emails
+EmailCredentials
+RPA challenge URL - https://rpachallenge.com/
+
+creating RPA challenge folder-
+Documents_Folder - 
+path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"RPA challenge")
+
+Download_Folders - Path.Combine(environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"Downloads")
+

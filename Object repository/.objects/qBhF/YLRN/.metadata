@@ -1,0 +1,12 @@
+﻿{
+  "Id": "YLRN1iVTrkywNfBbZxqPRA",
+  "Reference": "sylAzohXwkmGG_kMspm20A/YLRN1iVTrkywNfBbZxqPRA",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/qBhFuz_ooUmLnsYy1_SsPw",
+  "Name": "1.01",
+  "Type": "AppVersion",
+  "Created": "2021-12-29T16:33:39.0628342Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:33:39.0628342Z"
+}

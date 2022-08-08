@@ -1,0 +1,13 @@
+﻿{
+  "Id": "o4CxdvfRzEy1sljE_2BXPQ",
+  "Reference": "sylAzohXwkmGG_kMspm20A/o4CxdvfRzEy1sljE_2BXPQ",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/3oQAmYTt8km1hSYMUa0PyQ",
+  "Name": "Gmail",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2021-12-29T16:38:11.3732697Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:38:11.3732697Z"
+}

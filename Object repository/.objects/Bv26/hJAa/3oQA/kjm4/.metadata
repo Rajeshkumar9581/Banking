@@ -1,0 +1,13 @@
+﻿{
+  "Id": "kjm4s600UE66sdX6VWaL8Q",
+  "Reference": "sylAzohXwkmGG_kMspm20A/kjm4s600UE66sdX6VWaL8Q",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/3oQAmYTt8km1hSYMUa0PyQ",
+  "Name": "EN",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2021-12-29T16:38:11.7943134Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:38:11.7943134Z"
+}

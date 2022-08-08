@@ -1,0 +1,13 @@
+﻿{
+  "Id": "-HRU7RvEN0-3dTUtCsDrEQ",
+  "Reference": "sylAzohXwkmGG_kMspm20A/-HRU7RvEN0-3dTUtCsDrEQ",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/3oQAmYTt8km1hSYMUa0PyQ",
+  "Name": "Close (7)",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2021-12-29T16:38:09.7759856Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:38:09.7759856Z"
+}

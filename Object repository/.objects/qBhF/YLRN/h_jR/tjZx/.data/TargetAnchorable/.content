@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="CDiGNo02yEaO8NefrLhWvg" DesignTimeRectangle="9, 9, 92, 37" ElementType="Text" FriendlyName="'_H'" FullSelectorArgument="&lt;ctrl automationid='Ribbon' /&gt;&lt;ctrl automationid='PART_ApplicationButton' /&gt;&lt;ctrl name='_H' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='Ribbon' /&gt;&lt;ctrl automationid='PART_ApplicationButton' /&gt;&lt;ctrl name='_H' role='text' automationid='' check:text='_H' /&gt;" Guid="0730769e-3ab4-49a6-9dd1-d6a368504e85" ScopeSelectorArgument="&lt;wnd app='uipath.studio.exe' cls='HwndWrapper*' title='Object repository - UiPath Studio Community' /&gt;" SearchSteps="Selector, FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="InformativeScreenshot" originalValue="bc11878c11dddaf2ef20b9bffb6b82aa.png" xmlns="">0L5_fj59nEE6XNh_cc2ThlQ</imageRef>
+</TargetAnchorable>

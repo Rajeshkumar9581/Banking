@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="z798OIAP2k2_7DK3CKbRYQ" DesignTimeRectangle="431, 902, 24, 45" FriendlyName="'cloud_download'" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='I' type='' aaname='cloud_download' check:text='cloud_download' /&gt;" Guid="b1d01f57-de8f-4d22-bc9c-3997c3c5b75f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="InformativeScreenshot" originalValue="7e66edfdcdf3d3c0136099698c1f84a4.png" xmlns="">0cppusr46-EOu8cIc1akI2A</imageRef>
+</TargetAnchorable>

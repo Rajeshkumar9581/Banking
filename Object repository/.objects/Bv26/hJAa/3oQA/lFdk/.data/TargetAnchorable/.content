@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="TJIoPeGfF0ukUgsV6z85NA" DesignTimeRectangle="23, 902, 447, 45" ElementType="Text" FriendlyName="'Download Excel'" FullSelectorArgument="&lt;webctrl aaname=' Download Excel cloud_download' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Download Excel cloud_download' tag='A' type='' check:text='Download Excel cloud_download' /&gt;" Guid="15290535-6ad9-493e-a1a8-72934080ad94" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="InformativeScreenshot" originalValue="648ecee106d358c92d064bb72265c40f.png" xmlns="">0pkN_Syu5w0WejrCSylE9dg</imageRef>
+</TargetAnchorable>

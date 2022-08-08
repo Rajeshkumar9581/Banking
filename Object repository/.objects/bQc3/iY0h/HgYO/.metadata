@@ -1,0 +1,12 @@
+﻿{
+  "Id": "HgYOOZVL0k2kzuEeOh0_Cw",
+  "Reference": "sylAzohXwkmGG_kMspm20A/HgYOOZVL0k2kzuEeOh0_Cw",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/iY0hlezzP0-jMzMouicKWQ",
+  "Name": "Rpa Challenge - Google Chrome",
+  "Type": "Screen",
+  "Created": "2022-04-04T08:07:46.9147004Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-04-04T08:07:46.9147004Z"
+}

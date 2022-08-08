@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="ccQuCYE6VkquFKXkoZ4mOw" DesignTimeRectangle="9, 0, 1903, 1012" FriendlyName="'Intermediate D3D Window'" FullSelectorArgument="&lt;wnd cls='Intermediate D3D Window' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Intermediate D3D Window' /&gt;" Guid="912c6b1a-b182-4d40-a1f4-a00cdf18a089" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0ieQK4a1UzkyFKYEBoT4Dxg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="eed99aa15bd01ba5fec499e28858899c.png" xmlns="">0mXWaJo0fO0G_iMhpyCFM3g</imageRef>
+</TargetAnchorable>

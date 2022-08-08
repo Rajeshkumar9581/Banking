@@ -1,0 +1,13 @@
+﻿{
+  "Id": "amgfLmHtgUCl8OlDWqh_XA",
+  "Reference": "sylAzohXwkmGG_kMspm20A/amgfLmHtgUCl8OlDWqh_XA",
+  "ParentRef": "sylAzohXwkmGG_kMspm20A/3oQAmYTt8km1hSYMUa0PyQ",
+  "Name": "Phone Number",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-12-29T16:38:12.2285023Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-12-29T16:38:12.2285023Z"
+}
